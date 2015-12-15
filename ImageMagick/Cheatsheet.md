@@ -5,6 +5,12 @@ transformations on image files.
 
 ---
 
+#### LIST SUPPORTED FORMATS
+
+`identify -list format`
+
+`convert -list configure | grep DELEGATES`
+
 #### CONVERT JPEG IMAGE FILE TO PROGRESSIVE ENHANCEMENT
 
 `convert -strip -interlace Plane -quality 80 input-file.jpg output-file.jpg`
