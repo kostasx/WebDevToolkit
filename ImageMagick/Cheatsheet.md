@@ -84,3 +84,15 @@ for i in `seq -f "%04g" 0 1 30`; do montage -geometry +0+0 -tile 2x1 sprite.png 
 `convert *.jpg file.m2v (for mpeg-2)`
 
 `convert -adjoin file1.jpg file2.jpg file3.jpg movie.mpeg`
+
+#### ADD COMMENT
+
+`mogrify -comment "test" file.png`
+
+#### READ COMMENT
+
+`identify -verbose file.png | grep "Comment:"`
+
+### ADD COMMENT TO MULTIPLE FILES
+
+`for file in *.png ; do mogrify -comment "test" "$file"; done`
