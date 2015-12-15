@@ -102,3 +102,27 @@ for i in `seq -f "%04g" 0 1 30`; do montage -geometry +0+0 -tile 2x1 sprite.png 
 ### ADD COMMENT TO MULTIPLE FILES
 
 `for file in *.png ; do mogrify -comment "test" "$file"; done`
+
+#### CREATE ANIMATED GIF
+
+`convert -delay 10 -loop 0 anim*.gif animated.gif`
+
+#### REMOVE EXIF METADATA
+
+`mogrify -strip imagename.jpg`
+
+#### RESIZE BY WIDTH
+
+`convert -resize '640' input.jpg output.jpg`
+
+#### EXTRACT GRAYSCALE CHANNEL
+
+`convert -channel Red -separate in.jpg out.jpg`
+
+#### COMBINE GRAYSCALE IMAGES/CHANNELS INTO RGB IMAGE
+
+`convert -combine -channel RGB r.jpg g.jpg b.jpg rgb-output.jpg`
+
+#### CONVERT PSD TO JPG (MERGING LAYERS)
+
+`convert -layers merge DSC00783.psd DSC00783.jpg`
