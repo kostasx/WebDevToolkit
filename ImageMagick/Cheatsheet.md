@@ -49,3 +49,15 @@ convert temporary.gif -resize 24x24 smaller.gif
 for file in `ls *.pdf`; do convert $file `echo $file | sed 's/\.pdf$/\.jpg/'`; done
 ```
 
+### JPEG TO PDF CONVERSION
+
+`convert files.jpg file.pdf`
+
+`convert *.jpg file.pdf`
+
+`convert yourjpgfiles1.jpg yourjpgfiles2.jpg yourjpgfiles3.jpg yournewfile.pdf`
+
+__Compress PDF__ (Needs: GhostScript)
+
+`gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf`
+
