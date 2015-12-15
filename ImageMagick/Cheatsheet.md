@@ -39,3 +39,13 @@ convert temporary.gif -resize 24x24 smaller.gif
 
 `convert input.jpg -resize 50% output.jpg`
 
+#### PDF TO JPEG CONVERSION
+
+`convert abc.pdf abc.jpg`
+
+`convert *.pdf test.jpg`
+
+```
+for file in `ls *.pdf`; do convert $file `echo $file | sed 's/\.pdf$/\.jpg/'`; done
+```
+
