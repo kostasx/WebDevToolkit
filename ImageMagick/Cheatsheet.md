@@ -61,3 +61,18 @@ __Compress PDF__ (Needs: GhostScript)
 
 `gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf`
 
+#### CREATE A CSS SPRITE (tile ROWS x COLUMNS)
+
+```
+for i in `seq -f "%04g" 0 1 30`; do montage -geometry +0+0 -tile 2x1 sprite.png mac$i.png sprite.png; done
+```
+
+#### CONVERT ANIMATED GIF TO NON-TRANSPARENT FRAMES
+
+`convert -coalesce input.gif output_%03d.png`
+
+#### CONVERT TO GRAYSCALE:
+
+`convert input.png -colorspace gray output.png`
+
+`convert input.png -channel RGBA -matte -colorspace gray output.png`
