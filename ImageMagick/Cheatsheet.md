@@ -1,3 +1,10 @@
+# ImageMagick
+
+ImageMagick is a code library that can do loads of different operations and 
+transformations on image files.
+
+---
+
 #### CONVERT JPEG IMAGE FILE TO PROGRESSIVE ENHANCEMENT
 
 `convert -strip -interlace Plane -quality 80 input-file.jpg output-file.jpg`
