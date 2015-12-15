@@ -76,3 +76,11 @@ for i in `seq -f "%04g" 0 1 30`; do montage -geometry +0+0 -tile 2x1 sprite.png 
 `convert input.png -colorspace gray output.png`
 
 `convert input.png -channel RGBA -matte -colorspace gray output.png`
+
+#### CREATE MPEG FROM JPEG FILES (Requires MPEG delegate)
+
+`convert *.jpg file.mpg (for mpeg-1)`
+
+`convert *.jpg file.m2v (for mpeg-2)`
+
+`convert -adjoin file1.jpg file2.jpg file3.jpg movie.mpeg`
