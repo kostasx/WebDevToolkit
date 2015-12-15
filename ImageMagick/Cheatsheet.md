@@ -15,6 +15,8 @@ transformations on image files.
 
 `convert -strip -interlace Plane -quality 80 input-file.jpg output-file.jpg`
 
+`convert infile.jpg -interlace Line outfile.jpg`
+
 #### CONVERT MULTIPLE JPEG IMAGE FILES TO PROGRESSIVE ENHANCEMENT
 
 `for i in ./*.jpg; do convert -strip -interlace Plane -quality 80 $i progressive/$i; done`
