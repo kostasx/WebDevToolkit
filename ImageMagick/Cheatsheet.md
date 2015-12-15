@@ -24,3 +24,11 @@ transformations on image files.
 #### BLUR AN IMAGE
 
 `convert events.jpg -blur 0x16 events_blur.jpg`
+
+#### DOWNSCALE AN ANIMATED GIF 
+
+```
+convert do.gif -coalesce temporary.gif
+convert -size <original size> temporary.gif -resize 24x24 smaller.gif
+convert temporary.gif -resize 24x24 smaller.gif
+```
