@@ -32,3 +32,10 @@ convert do.gif -coalesce temporary.gif
 convert -size <original size> temporary.gif -resize 24x24 smaller.gif
 convert temporary.gif -resize 24x24 smaller.gif
 ```
+
+#### IMAGE RESIZE
+
+`convert input.jpg -resize 800x600 -quality 95 output.jpg`
+
+`convert input.jpg -resize 50% output.jpg`
+
