@@ -38,3 +38,10 @@ jQuery.ajaxSetup({
         //do stuff before request fires
     }
 });
+
+/* REFERENCES
+
+Ajax-Interceptor: Wire interceptors on XHR requests and responses
+https://github.com/slorber/ajax-interceptor
+
+*/
