@@ -1,0 +1,2 @@
+# Download latest Wordpress release in zipped form
+alias getwp="wget https://wordpress.org/latest.zip";
