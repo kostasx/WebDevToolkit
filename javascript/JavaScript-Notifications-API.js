@@ -6,5 +6,10 @@ if ( window.Notification && Notification.permission !== "denied" ) {
             body: 'I am the body text!',
             icon: '/path/to/icon.png' // optional
         }); 
+
+        n.onclick(function(e){
+            console.log(e);
+        });
+
     });
 }

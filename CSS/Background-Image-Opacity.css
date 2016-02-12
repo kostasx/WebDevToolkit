@@ -1,0 +1,11 @@
+/* BACKGROUND IMAGE WITH OPACITY */
+
+	.el {
+		position: relative;
+	}
+	.el {
+		content: '';
+		position: absolute;
+    background-image: url(image.jpg);
+		opacity: .2;
+	}

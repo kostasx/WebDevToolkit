@@ -1,0 +1,5 @@
+/* CUSTOM CHARACTER LIST STYLE */
+
+li:before {
+  content: "\2605";
+}
