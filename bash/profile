@@ -9,3 +9,4 @@ alias ftpstop="sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.pli
 function lookup(){
 	open dict://"$1"
 }
+export -f lookup
