@@ -1,3 +1,5 @@
+// Helper method to apply addEventListener, only if the element(s) passed to the method exists.
+
 if ( typeof addEventListenerIf === "undefined" ){
 
   var addEventListenerIf = function( selector, type, listener, useCapture ) {
