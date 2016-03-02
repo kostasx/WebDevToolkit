@@ -4,3 +4,9 @@ alias getwp="wget https://wordpress.org/latest.zip";
 # Start and Stop FTP Server (Mac OS X)
 alias ftpstart="sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist";
 alias ftpstop="sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist";
+
+## LOOKUP TERM IN OS X DICTIONARY
+function lookup(){
+	open dict://"$1"
+}
+export -f lookup
