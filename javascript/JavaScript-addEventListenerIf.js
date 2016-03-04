@@ -21,6 +21,8 @@ if ( typeof addEventListenerIf === "undefined" ){
       }
 
   };  
+  
+  var onIf = addEventListenerIf;
 
 }
 
